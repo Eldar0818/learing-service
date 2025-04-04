@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background-color: aliceblue;
+    font-family: sans-serif;
+}
+
+.app-header{
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.navbar{
+    width: 100%;
+    background-color: #121212;
+    color: aliceblue;
+    padding: 15px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    font-size: 35px;
+    color: aliceblue;
+    font-weight: 800;
+    text-decoration: none;
+    transition: all 0.15s ease;
+}
+
+.logo:hover{
+    color: #d9d9d9;
+}
+
+.navlinks a{
+    padding: 7px 15px;
+    background-color: aliceblue;
+    color: #121212;
+    border-radius: 4.5px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 0.15s ease;
+}
+
+.navlinks a:hover{
+    background-color: #d9d9d9;
+}
+
+.container{
+    max-width: 1024px;
+    width: 100%;
+    padding: 50px 0;
+    margin: 0 auto;
+}
+
+.page-header{
+    background-color: #d9d9d9;
+    color: #121212;
+    width: 100%;
+    padding: 10px 25px;
+    margin-bottom: 10px;
+}
+
+.page-header h2{
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 1.1px;
+}
+
+.p-card-info{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.p-card-info-item{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #d9d9d9;
+    margin: 10px 0;
+    padding: 15px 10px;
+    border: 2px solid royalblue;
+}
+
+.p-card-info-item h4{
+    font-size: 16px;
+    color: royalblue;
+    letter-spacing: 1.1px;
+}
+
+.p-card{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.p-card-row{
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.p-card-row span{
+    font-size: 15px;
+}
+
+.p-card-view-link{
+    padding: 6.5px 10px;
+    background-color: royalblue;
+    color: aliceblue;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 4.5px;
+    transition: all 0.15s ease;
+}
+
+.p-card-view-link:hover{
+    background-color: darkblue;
+}

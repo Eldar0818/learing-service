@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block title %}Home Page{% endblock %}
+
+{% block content %}
+<div class="container">
+    <header class="page-header">
+        <h2>Products List</h2>
+    </header>
+    
+    <section class="product-list">
+        <div class="p-card-info">
+            <div class="p-card-info-item" style="border-right: none">
+                <h4>Title:</h4>
+            </div>
+            <div class="p-card-info-item" style="border-right: none">
+                <h4>In Stock:</h4>
+            </div>
+            <div class="p-card-info-item">
+                <h4>-</h4>
+            </div>
+        </div>
+        {% for product in products %}
+            <article class="p-card">
+                <div class="p-card-row">
+                    <span>{{ product.title }}</span>
+                </div>
+                <div class="p-card-row">
+                    {% if product.amount > 0 %}
+                        <span style="color: teal">YES</span>
+                    {% else %}
+                        <span style="color: crimson">NO</span>
+                    {% endif %}
+                </div>
+                <div class="p-card-row">
+                    <a href="" class="p-card-view-link">View</a>
+                </div>
+            </article>
+        {% endfor %}
+    </section>
+</div>  <!-- Closing .container div -->
+{% endblock %}
