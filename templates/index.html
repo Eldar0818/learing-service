@@ -33,7 +33,9 @@
                     {% endif %}
                 </div>
                 <div class="p-card-row">
-                    <a href="" class="p-card-view-link">View</a>
+                    <a href="{{ url_for('product_info', pid=product.id) }}" class="p-card-view-link">
+                        View
+                    </a>                    
                 </div>
             </article>
         {% endfor %}

@@ -2,7 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background: none;
+    border: none;
+    outline: none;
     text-decoration: none;
+    color: inherit;
 }
 
 body{
@@ -126,4 +130,93 @@ body{
 
 .p-card-view-link:hover{
     background-color: darkblue;
+}
+
+/* Create Style */
+
+.add-form-container{
+    width: 100%;
+    padding: 50px;
+}
+
+.add-form{
+    width: 100%;
+}
+
+.add-form-groups{
+    width: 100%;
+    display: flex;
+}
+
+.add-form-group{
+    flex: 1;
+    padding: 15px;
+}
+
+.form-input{
+    width: 100%;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-input label{
+    color: #6c6c6c;
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+
+.form-input input,
+.form-input select{
+    border: 1px solid #d9d9d9;
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    font-size: 15px;
+    padding: 5px;
+}
+
+.add-form-actions{
+    width: 100%;
+    display: flex;
+    padding: 15px 0px;
+}
+
+.add-form-action{
+    flex: 1;
+    padding: 0px 15px;
+}
+
+.add-form-action button{
+    background-color: royalblue;
+    color: aliceblue;
+    width: 100%;
+    height: 40px;
+    border-radius: 4.5px;
+    font-weight: 600;
+    letter-spacing: 1.1px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+
+.add-form-action button:hover{
+    background-color: darkblue;
+}
+
+.add-form-action a{
+    display: block;
+    background-color: #121212;
+    color: aliceblue;
+    height: 40px;
+    border-radius: 4.5px;
+    font-weight: 600;
+    letter-spacing: 1.1px;
+    transition: all 0.15s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-form-action a:hover{
+    background-color: #6c6c6c;
 }

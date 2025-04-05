@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}Product Information{% endblock %}
+
+{% block content %}
+<div class="container">
+    <header class="page-header">
+        <h2>Product Details</h2>
+    </header>
+    
+    <section class="product-list">
+        <p>{{ product.title }}</p>
+    </section>
+</div>  <!-- Closing .container div -->
+{% endblock %}

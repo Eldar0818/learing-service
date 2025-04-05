@@ -7,15 +7,62 @@
     <header class="page-header">
         <h2>Add Products</h2>
     </header>
-    
+
     <section class="add-form-container">
         <form action="" class="add-form">
-            <section class="add-form-group">
-
-            </section>
-            <section class="add-form-group">
-
-            </section>
+            <div class="add-form-groups">
+                <section class="add-form-group">
+                    <div class="form-input">
+                        <label for="title">Title</label>
+                        <input type="text" name="title" id="title">
+                    </div>
+                    <div class="form-input">
+                        <label for="price">Price</label>
+                        <input type="number" name="price" id="price">
+                    </div>
+                    <div class="form-input">
+                        <label for="amount">Amount</label>
+                        <input type="number" name="amount" id="amount">
+                    </div>
+                    <div class="form-input">
+                        <label for="pid">Product ID</label>
+                        <input type="text" name="pid" id="pid">
+                    </div>
+                    <div class="form-input">
+                        <label for="pwtype">Power Form</label>
+                        <select name="pwtype" id="pwtype">
+                            <option value="electric">Electric</option>
+                            <option value="diesel">Diesel</option>
+                        </select>
+                    </div>
+                </section>
+                <section class="add-form-group">
+                    <div class="form-input">
+                        <label for="suplier">Suplier</label>
+                        <input type="text" name="suplier" id="suplier">
+                    </div>
+                    <div class="form-input">
+                        <label for="ctdate">Contract Date</label>
+                        <input type="date" name="ctdate" id="ctdate">
+                    </div>
+                    <div class="form-input">
+                        <label for="mtterm">Maintance Term</label>
+                        <select name="mtterm" id="mtterm">
+                            <option value="toBeDetermined">To Be Determined</option>
+                            <option value="long">Long Term</option>
+                            <option value="short">Short Term</option>
+                        </select>
+                    </div>
+                </section>
+            </div>
+            <div class="add-form-actions">
+                <div class="add-form-action">
+                    <button type="submit">Add Product</button>
+                </div>
+                <div class="add-form-action">
+                    <a href="{{ url_for('home') }}">Cancel</a>
+                </div>
+            </div>
         </form>
     </section>
 </div>  <!-- Closing .container div -->
